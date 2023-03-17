@@ -20,13 +20,24 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/bg.jpeg") center center no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
   top: 0;
   height: 100vh;
   z-index: -1;
+}
+
+body::after {
+  content: "";
+  background-color: #00000090;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
 @media (min-width: 1024px) {
@@ -210,7 +221,7 @@ h6 {
   position: relative;
 }
 
-.navbar li+li {
+.navbar li + li {
   margin-left: 30px;
 }
 
@@ -249,7 +260,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -258,7 +269,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #fff;
 }
 
@@ -323,7 +334,7 @@ h6 {
   padding: 12px 20px;
 }
 
-.navbar-mobile li+li {
+.navbar-mobile li + li {
   margin: 0;
 }
 
@@ -964,7 +975,7 @@ section .container {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1061,7 +1072,7 @@ section .container {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1129,7 +1140,7 @@ section .container {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #18d26e;
   border: 0;
   padding: 10px 30px;
@@ -1138,7 +1149,7 @@ section .container {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #15bb62;
 }
 
