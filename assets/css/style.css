@@ -21,6 +21,10 @@ body {
   user-select: none;
 }
 
+.me-avatar {
+  border-radius: 50%;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -537,6 +541,14 @@ section .container {
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
   transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.interests .icon-box img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-right: 10px;
 }
 
 .interests .icon-box i {
