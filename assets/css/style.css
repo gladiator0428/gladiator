@@ -853,6 +853,12 @@ section .container {
   opacity: 0;
 }
 
+.portfolio-wrap > img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .portfolio .portfolio-wrap .portfolio-info {
   opacity: 0;
   position: absolute;
