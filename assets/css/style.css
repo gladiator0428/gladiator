@@ -17,10 +17,6 @@ body {
   background: transparent;
 }
 
-* {
-  user-select: none;
-}
-
 .me-avatar {
   border-radius: 50%;
 }
